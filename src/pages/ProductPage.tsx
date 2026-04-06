@@ -5,8 +5,8 @@ import { useCart } from '../components/CartContext';
 import aa from 'search-insights';
 
 const searchClient = algoliasearch(
-  'SRD7V01PUE',
-  '21d2cd80869e20eb0becf4065f058b95'
+  import.meta.env.VITE_ALGOLIA_APP_ID,
+  import.meta.env.VITE_ALGOLIA_API_KEY
 );
 const INDEX_NAME = 'fashion_updated';
 
